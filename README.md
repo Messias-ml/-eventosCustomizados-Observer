@@ -36,12 +36,14 @@ Dessa maneira o baixo acoplamento vai se manter.
 
 **ATIVAR CLIENTE** 
 Na classe Ativar Cliente Sevice eu instancio a primeiro momento o ApplicationEventPublisher, com ele eu posso publicar um evento, e quem estiver escutando este evento, pode capturar o que eu passei por parametro e tratar como quiser.
+![img.png](AtivarCliente.png)
 
 **NOTIFICAÇÃO SERVICE**
 
 No notificação Service, vai exister uma anotation que faz com que execute aquele metodo quando algum evento é publicado.
 Primeiro passo é definirmos um bean para que a class seja administrada pelo container do spring, @Service ou @Component, assim dizemos que esta class é um container do spring. <br>
 O proximo passo é anotar o metodo que queremos executar quando um evento existir no container spring, e anotamos com @EventListener, assim o metodo anotado com isso, vai receber um cliente e será executado.
+![img.png](CapturaDoEvento-ouvinte.png)
 
 **OBSERVAÇÕES SOBRE EVENTOS**
 Podemos ter algumas publicações de eventos e algumas escutas, eu poderia notificar o cliente se ele fosse ativado também, ou seja, cabe algumas implementações <br>

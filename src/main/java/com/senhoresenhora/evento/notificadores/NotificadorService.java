@@ -4,9 +4,9 @@ import com.senhoresenhora.evento.clientes.Cliente;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.event.EventListener;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
-@Component
+@Service
 public class NotificadorService {
 
     @Qualifier("rapido")
