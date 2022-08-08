@@ -7,7 +7,8 @@ vão ser acionados assim que existir este evento e então será executado sempre
 </i>
 <h3>clientes</h3>
 Aqui nesta pasta vamos deixar tudo relacionado aos clientes.
-<br>**Service:**
+<br>
+**Service:**
 >Aqui se localiza o serviço que vai notificar o cliente quando ativarmos ele.
 >> temos aqui o metodo de ativarCliente que espera receber um cliente.
 
