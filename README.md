@@ -1,6 +1,10 @@
 # EventoObserver
 <h2>Eventos com o padrão (patterns) observer</h2>
-
+<i>Eventos são algo que lançamos para nosso sistema capturar e trabalhar em cima disso.
+<br> Hoje por exemplo vamos lançar um evento dizendo ao nosso sistema que um cliente foi ativado, os metodos EventListener (os ouvintes dos eventos)
+vão ser acionados assim que existir este evento e então será executado sempre que tiver o evento que ele espera.
+<br> Vamos passar um cliente como parametro para este evento, e com isso o metodo escutante terá que capturar este cliente e fazer o que quiser com ele, QUANDO este evento for acionado/ quando ele existir.
+</i>
 <h3>clientes</h3>
 Aqui nesta pasta vamos deixar tudo relacionado aos clientes.
 <br>**Service:**
@@ -35,7 +39,7 @@ Na classe Ativar Cliente Sevice eu instancio a primeiro momento o ApplicationEve
 **NOTIFICAÇÃO SERVICE**
 
 No notificação Service, vai exister uma anotation que faz com que execute aquele metodo quando algum evento é publicado.
-Fazemos isso pelo container do spring, lançamos o evento e com o @Service ou @Component, dizemos que esta class é um container do spring <br>
+Primeiro passo é definirmos um bean para que a class seja administrada pelo container do spring, @Service ou @Component, assim dizemos que esta class é um container do spring. <br>
 O proximo passo é anotar o metodo que queremos executar quando um evento existir no container spring, e anotamos com @EventListener, assim o metodo anotado com isso, vai receber um cliente e será executado.
 
 **OBSERVAÇÕES SOBRE EVENTOS**
